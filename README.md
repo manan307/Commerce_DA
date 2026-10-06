@@ -2,13 +2,15 @@
 
 ### SQL Analysis of the Olist Brazilian E-Commerce Dataset using PostgreSQL
 
-Commerce_DA is a SQL portfolio project that analyzes the Olist Brazilian E-Commerce dataset using PostgreSQL. The project focuses on solving real-world business problems through SQL by exploring customer behavior, sales performance, seller performance, product demand, and payment trends.
+Commerce_DA is a SQL portfolio project built using the Olist Brazilian E-Commerce dataset. The project focuses on analyzing customer behavior, sales, product demand, seller performance, payment trends, and delivery performance using PostgreSQL.
+
+The goal of the project is to solve practical business questions using SQL and turn raw relational data into useful business insights.
 
 ---
 
 ## Dataset
 
-This project uses a subset of the **Olist Brazilian E-Commerce Dataset**.
+This project uses the Olist Brazilian E-Commerce Dataset.
 
 **Source:**  
 https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
@@ -26,44 +28,66 @@ https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
 ## Database Schema
 
-The database consists of six related tables connected using primary and foreign keys.
+The project uses six related tables connected through primary and foreign key relationships.
 
 ![ER Diagram](ER_Diagram/ER_diagram.png)
 
 ---
 
-## Business Questions Solved
+## Business Questions
 
-This project answers questions such as:
+The analysis covers questions such as:
 
-- Which product categories generate the highest revenue?
-- Which sellers contribute the highest sales?
-- Which customer states place the most orders?
-- Which payment methods are used most frequently?
-- Which customers are repeat buyers?
-- What is the average delivery time for completed orders?
+- What is the total revenue generated from delivered orders?
+- Which product categories have the highest demand?
+- Which sellers contribute the most to sales?
+- Which customer states have the largest customer base?
+- What percentage of customers are repeat buyers?
+- What is the average delivery time?
+- What percentage of orders arrive later than the estimated delivery date?
 - How do monthly order volumes change over time?
-- Which product categories rank highest by demand?
+- Which payment methods are used most frequently?
+- Which customers contribute the highest spending?
 
 ---
 
-## SQL Skills Demonstrated
+## SQL Analysis
 
-- Data Validation
-- Data Aggregation
+The project demonstrates practical PostgreSQL skills including:
+
+- Data validation
+- Filtering and sorting
+- GROUP BY and HAVING
+- Aggregate functions
 - Multi-table JOINs
-- GROUP BY & HAVING
-- CASE Statements
-- Window Functions (RANK)
-- Date Functions
+- CASE statements
+- Window functions
+- RANK()
+- Date and timestamp functions
+- Subqueries
 - SQL Views
-- Business-Oriented Analysis
+- Business-oriented analysis
+
+---
+
+## Key Findings
+
+Some of the key findings from the analysis include:
+
+- **R$13.22M** revenue generated from delivered orders, excluding freight.
+- **96,096 unique customers** were identified across the dataset.
+- Average delivery time was **12.6 days** across **96,470 delivered orders**.
+- **8.1%** of delivered orders arrived after the estimated delivery date.
+- The overall **repeat purchase rate was 3.12%**.
+- **São Paulo (SP)** had the largest customer base, accounting for **41.9%** of unique customers.
+- **3 states** were classified as High-tier states based on the customer threshold used in the analysis.
+- **cama_mesa_banho** was the highest-demand product category with **11,115 units sold**.
 
 ---
 
 ## Project Structure
 
-```
+```text
 Commerce_DA
 │
 ├── SQL
@@ -77,39 +101,3 @@ Commerce_DA
 │
 ├── .gitignore
 └── README.md
-```
-
----
-
-## Tools Used
-
-- PostgreSQL
-- pgAdmin 4
-- SQL
-
----
-
-## Key Highlights
-
-- Designed a relational database with six interconnected tables.
-- Performed data validation and exploratory analysis.
-- Built business-focused SQL queries to extract meaningful insights.
-- Used SQL Views for reusable analysis.
-- Applied JOINs, Window Functions, CASE statements, and Aggregate Functions to solve analytical problems.
-
----
-
-## Future Improvements
-
-- Develop an interactive Power BI dashboard.
-- Expand the analysis using additional Olist dataset tables.
-- Build KPI dashboards for business reporting.
-- Perform customer segmentation and sales trend analysis.
-
----
-
-## Author
-
-**Manan Poddar**
-
-GitHub: https://github.com/manan307
